@@ -7,12 +7,12 @@ env:
 
 jobs:
   main:
-  runs-on: ubuntu-latest
-  steps:
-    -name: Check out the code
-     uses: actions/checkout@v2
-    -name: Upload the artifact
-     uses: actions/upload-artifact@v2
-     with:
+    runs-on: ubuntu-latest
+    steps:
+      -name: Check out the code
+       uses: actions/checkout@v2
+      -name: Upload the artifact
+       uses: actions/upload-artifact@v2
+       with:
        name: ${{ env.ARTIFACT_NAME }}
        path: .
